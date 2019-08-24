@@ -1,0 +1,13 @@
+.section-contact {
+    position: relative;
+}
+
+.section-contact .card-panel {
+    position: relative;
+    z-index: 1;
+}
+
+.card-panel {
+    border-radius: 5%;
+    padding: 8%;
+}

@@ -1,0 +1,89 @@
+/* html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+.section-1{
+    height: 80vh;
+    max-height: 300px;
+    background: url('img/tree.png'); 
+    background-repeat:no-repeat;
+    
+}
+.carousel-slider{
+  margin-bottom: 40px;
+}
+
+nav .nav-center ul {
+    text-align: center;
+}
+
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+    text-align: center
+}
+
+nav.nav-center ul li a {
+    display: inline-block;
+}
+
+.dropdown-content {
+    width: 200px !important;
+}
+
+.section-name {
+    margin-top: 200px;
+}
+
+.scroll-icon {
+    position: absolute;
+    top: 180%;
+    left: 47%;
+    opacity: 0.9;
+}
+
+.list-links:hover {
+    color: green;
+}
+
+.active {
+    color: grey;
+    padding: 15px 0 15px;
+    ;
+    ;
+    width: 10px;
+}
+
+.img-modal {
+    height: 300px;
+    width: 100%;
+}
+
+.box-background {
+    position: absolute;
+}
+
+.flow-text {
+    font-family: 'Livvic', sans-serif;
+}
+
+li {
+    font-family: 'Comfortaa', cursive;
+}
+.avatar{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    top:-60px;
+    left: 135px;
+    border:solid 5px greenyellow; 
+
+}
+
+
+/* 
+.section-blogs{
+  position: relative;
+}
+#left{
+top: 10;
+} */

@@ -1,0 +1,36 @@
+.review {
+    width: 300px;
+    margin: 0 auto;
+
+    padding: 30px;
+    text-align: center;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .review__rating input {
+    position: absolute;
+    top: auto;
+    left: -10000px;
+  }
+  
+  .review__rating label {
+    font-size: 8em;
+    color: #fff;
+  }
+  
+  .review__rating label:hover {
+    color: rgb(170, 170, 170);
+  }
+  
+  .review__button {
+    padding: 10px;
+    margin: 20px 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  
