@@ -1,0 +1,42 @@
+/* .circle{
+    height: 100px;
+    width:80px;
+    margin-left: 80px;
+} */
+
+body{
+  background: #f6f6f6;
+}
+header, main, footer{
+    padding-left: 300px;
+    /* background: #366e75; */
+  }
+.main-body{
+    background: white;
+      margin: 20px 50px;
+      padding: 20px 20px;
+       
+}
+
+nav .side-nav .active{
+  background: green !important;
+}
+
+.main-form{
+  padding-top: 20px;
+    margin: 10px 10px;
+}
+/* textarea{
+  height: 100px !important;
+  line-height: 100px !important;
+} */
+.card-image{
+  max-height: 100px;
+}
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+       

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="icon" href="../img/64e24142-cfb9-4fa4-a7a3-4f85b420cc2b_200x200.png">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/section-contact.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/spinner.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+
+    <!--FONT AWESOME-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Paprika&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <style>
+        textarea {
+            padding: 50px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav class="transparent">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo green-text">
+                <img style="height: 80px; width:100px;" src="../img/29a16a75-c411-459f-9857-c82aa2370cf6_200x200.png"
+                    alt="">
+            </a>
+            <a href="#" class="button-collapse" data-activates="nav-mobile">
+                <i class="material-icons black-text">menu</i>
+            </a>
+            <!--Side Nav Bar-->
+            <ul id="nav-mobile" class="side-nav fixed z-depth-3">
+                <li class="">
+                    <div class="user-view">
+                            <div class="background">
+                                    <img src="img/photo-1463428537233-c84b754b2c84.jpg" alt="">
+                                </div>
+                        <a href="#" class="">
+                            <img class="circle" src="../img/person1.jpg" alt="">
+                        </a>
+                        <a href="#"><span class="white-text name">John Doe</span></a>
+                        <a href="#"><span class="white-text email">john_doe@email.com</span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <!-- <li class="flow-text"><a href="index.html"><i class="material-icons">dashboard</i>Home</a></li> -->
+                <li class="flow-text"><a href="statistics.html"><i class="material-icons">insert_chart</i>Statistics</a>
+                </li>
+                <li class="flow-text active"><a href="blog.html"><i class="material-icons">developer_board</i>Blog</a></li>
+                <li class="flow-text"><a href="bloglist.html"><i class="material-icons">assignment</i>Blog List</a></li>
+                <li class="flow-text" style="margin-top: 250px;"><a href="../bloggers.html"><i
+                            class="material-icons">settings_power</i>Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Main Body-->
+    <main>
+        <div class="main-body z-depth-3">
+            <p class="flow-text">Start your blog Here:</p>
+            <div class="main-form">
+                <form action="" method="post">
+                    <div class="input-field">
+                        <input type="text" name="title" id="title">
+                        <label for="phone">Title</label>
+                    </div>
+                    <br>
+
+                    <div class="input-field">
+                        <label for="date">Date</label>
+                        <input type="text" class="datepicker" id="date">
+
+                    </div>
+
+                    <label style="font-size: 15px;">Blog Content Here:</label>
+                    <textarea name="editor" class="ckeditor">
+                </textarea><br>
+                    <input type="submit" value="Upload" name="submit_text" class="btn waves-effect waves-light green">
+                </form>
+            </div>
+        </div>
+    </main>
+
+<!--Floating Button-->
+<div class="fixed-action-btn horizontal click-to-toggle">
+    <a class="btn-floating btn-large green pulse">
+      <i class="material-icons">edit</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating green">
+          <i class="material-icons">insert_chart</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating blue"> 
+          <i class="material-icons">format_quote</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating red">
+          <i class="material-icons">publish</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating yellow">
+          <i class="material-icons">attach_file</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <!--Ckediotr 4-->
+    <!-- <script src="//cdn.ckeditor.com/4.12.1/full/ckeditor.js"></script> -->
+    <script src="../ckeditor/ckeditor.js"></script>
+    <!--Ckediotr 5-->
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
+    <script type="text/javascript" src="../ckeditor5-build-classic/ckeditor.js"></script> -->
+
+
+    <script>
+        // ClassicEditor.create(document.querySelector('#editor'),{
+        //     minHeight: '700px'
+        // });
+
+
+        $(document).ready(function () {
+            $('.button-collapse').sideNav({
+                draggable: true,
+                closeOnClick: true
+            });
+
+
+            $('.datepicker').on('mousedown', e => e.preventDefault());
+            //INIT DATEPICKER JQUERY
+            $(document).ready(function () {
+                $('.datepicker').pickadate();
+            });
+
+            CKEDITOR.replace('content');
+
+        });
+    </script>
+
+</body>
+
+</html>
