@@ -1,0 +1,21 @@
+@import'./materialize.scss';
+
+$bgcolor: red;
+
+
+
+
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #000;
+    }
+    @else{
+        @return #fff;
+    }
+}
+body{
+    background: $primary-color;
+    color:set-text-color($primary-color);
+}
+
+
